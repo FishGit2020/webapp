@@ -1,0 +1,17 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "use darksky api for forcasting",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "bruce",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "got": "^10.6.0",
+    "node-fetch-npm": "^2.0.4"
+  }
+}

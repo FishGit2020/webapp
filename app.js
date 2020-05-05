@@ -7,7 +7,7 @@ const port = 8080
 const got = require('got')
 const path = require('path')
 
-/ darksky key
+// darksky key
 const key = 'ba242167352d24e9f8b00d44251424d2'
 
 app.get('/', (req, res) => res.send('Weather app is running'))

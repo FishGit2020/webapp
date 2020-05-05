@@ -27,7 +27,7 @@ app.get('/weather', (req, res) => {
 
 app.listen(port, () => console.log(`Weather app is listening on port ${port}!`))
 
-const youversion = require('./src/youversion/youversionApi.js')
+const youversion = require('./src/bible/bibleApi.js')
 app.get('/BibleToday', (req, res) => {
 	youversion.todayverse((error, result) => {
 		console.log(result)

@@ -1,5 +1,5 @@
 {
-  "name": "weatherapp",
+  "name": "webapp",
   "version": "1.0.0",
   "description": "use darksky api for forcasting",
   "main": "app.js",

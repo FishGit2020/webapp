@@ -1,9 +1,13 @@
 <!doctype html>
 <html>
+    <head>
+        <script type='text/javascript' src='bibleApi.js'></script>
+    </head>
+    
     <header><title>BibleToday</title></header>
     <body>
         <h2>Today's Bible verse</h2>
-        <script type="module" src="bibleApi.js">
+        <script>
             todayverse((error, result) => {
                 console.log(result)
                 document.getElementById("bible").innerHTML = result

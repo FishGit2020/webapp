@@ -35,8 +35,15 @@ app.get('/BibleToday', (req, res) => {
 	})
 })
 
+app.get('/BibleToday2', (req, res) => {
+	youversion.todayverse((error, result) => {
+		console.log('Called BibleToday2 succeed, sending index.html');
+		res.sendFile(path.join(__dirname, 'src/bible/', 'index.html'));
+	})
+})
+
 app.get('/weather2', (req, res) => {
 	console.log('Called weather2 succeed, sending index.html');
-	res.sendFile(path.join(__dirname, 'src/', 'index.html'));
+	res.sendFile(path.join(__dirname, 'src/weather/', 'index.html'));
 })
 

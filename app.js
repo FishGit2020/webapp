@@ -69,3 +69,7 @@ app.get('/Sanantone2', (req, res) => {
 app.get('/style.css', (req, res) => {
 	res.sendFile(path.join(__dirname, 'src/bible/', 'style.css'));
 })
+
+app.get('/bob', (req, res) => {
+	res.sendFile(path.join(__dirname, 'src/bob/', 'index.html'));
+})

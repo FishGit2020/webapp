@@ -2,20 +2,15 @@
 <html>
     <head>
         <title>Bible Today</title>
-        <link rel="stylesheet" href="style.css">
-        <script type='text/javascript' src='bibleApi.js'></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     
     <body>
         <h2>Today's Bible verse</h2>
-<!--         
-        <script>
-            todayverse((error, result) => {
-                console.log(result)
-                document.getElementById("bible").innerHTML = result
-            })
-        </script>
-        <p id="bible"></p> -->
+        <script src="../../bibletoday"></script>
+        <!-- <button type="button" onclick="document.getElementsByClassName('verse').innerHTML = verse">
+            Bible Verse
+        </button> -->
 
         <button type="button" onclick="document.getElementById('date').innerHTML = Date()">
             Click me to display Date and Time.

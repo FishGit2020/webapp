@@ -30,7 +30,7 @@ app.listen(port, () => console.log(`Weather app is listening on port ${port}!`))
 const youversion = require('./src/bible/bibleApi.js')
 app.get('/BibleToday', (req, res) => {
 	youversion.todayverse((error, result) => {
-		console.log('Called BibleToday2');
+		console.log('Called BibleToday');
 		console.log(result)
 		res.send(JSON.parse(result).verse.text);
 	})
@@ -64,4 +64,8 @@ app.get('/Sanantone', (req, res) => {
 app.get('/Sanantone2', (req, res) => {
 	console.log('Called San Antone');
 	res.sendFile(path.join(__dirname, 'src/sanantone/', 'index.html'));
+})
+
+app.get('/style.css', (req, res) => {
+	res.sendFile(path.join(__dirname, 'src/bible/', 'style.css'));
 })

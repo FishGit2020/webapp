@@ -1,0 +1,66 @@
+body {
+    background: rgb(57, 57, 57);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    color: blue;
+    background: black;
+}
+p {
+    background: green;
+}
+button {
+    border-radius: 25px;
+    background: gray;
+    border: none;
+    color: white;
+}
+header {
+    background: black;
+    padding: 20px;
+}
+footer {
+    background: black;
+    padding: 10px 20px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+li:hover {
+    background-color: red;
+}
+.feature-box {
+    background: white;
+    color: black;
+    display: flex;
+}
+.feature-box div {
+    margin: 2px;
+    width: 100%;
+}
+section.feature-box.sales div {
+    background: gray;
+
+}
+section.feature-box.closeouts div {
+    background: red;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+li {
+    margin: 0;
+    padding: 0;
+    margin: 0 20px 0 0 ;
+    border-radius: 2px;
+}

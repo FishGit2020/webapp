@@ -5,6 +5,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* header */
 h2 {
     color: blue;
     background: black;
@@ -21,10 +23,10 @@ button {
 header {
     background: black;
     padding: 20px;
-}
-footer {
-    background: black;
-    padding: 10px 20px;
+    height: 400px;
+    text-align: center;
+    background-image: url(images/nature.jpg);
+    background-position: center;
 }
 a {
     text-decoration: none;
@@ -35,6 +37,33 @@ a:hover {
 li:hover {
     background-color: red;
 }
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+nav li {
+    margin: 0;
+    padding: 0;
+    margin: 0 20px 0 0 ;
+    border-radius: 2px;
+}
+header .logo a {
+    background-color: red;
+    background-image: url("images/manatee.jpeg");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 275px;
+    display: inline-block;
+    text-indent: -99999px;
+    position: relative;
+}
+
+/* features */
+
 .feature-box {
     background: white;
     color: black;
@@ -51,16 +80,9 @@ section.feature-box.sales div {
 section.feature-box.closeouts div {
     background: red;
 }
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-}
-li {
-    margin: 0;
-    padding: 0;
-    margin: 0 20px 0 0 ;
-    border-radius: 2px;
+
+/* footer */
+footer {
+    background: black;
+    padding: 10px 20px;
 }

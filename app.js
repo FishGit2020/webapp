@@ -2,6 +2,7 @@
 
 const express = require('express')
 const app = express()
+exports.app = app
 const port = 8080
 
 const got = require('got')
@@ -9,6 +10,7 @@ const path = require('path')
 
 // darksky key
 const key = 'ba242167352d24e9f8b00d44251424d2'
+app.use(express.static('public'))
 
 app.get('/', (req, res) => res.send('Weather app is running'))
 
@@ -66,10 +68,11 @@ app.get('/Sanantone2', (req, res) => {
 	res.sendFile(path.join(__dirname, 'src/sanantone/', 'index.html'));
 })
 
-app.get('/style.css', (req, res) => {
-	res.sendFile(path.join(__dirname, 'src/bible/', 'style.css'));
-})
+// app.get('/style.css', (req, res) => {
+// 	res.sendFile(path.join(__dirname, 'src/bible/', 'style.css'));
+// })
 
-app.get('/bob', (req, res) => {
-	res.sendFile(path.join(__dirname, 'src/bob/', 'index.html'));
-})
+//  test first webapp
+app.get('/test', (req, res) => {
+	res.sendFile(path.join(__dirname, 'src/test/', 'index.html'));
+});

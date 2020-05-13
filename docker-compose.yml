@@ -8,12 +8,14 @@ services:
     build: .
     ports:
       - "8080:8080"
+    env_file:
+      - pgdb.env
   pgdb:
     image: postgres:9.5-alpine
     restart: always
     ports: 
       - "5432:5432"
-    environment:
-        POSTGRES_PASSWORD: 'postgres'
+    env_file:
+      - pgdb.env
     volumes:
       - ./pgdb:/var/lib/postgresql/data

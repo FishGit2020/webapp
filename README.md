@@ -1,6 +1,6 @@
-# webapp
+# "webapp"
 
-This is an app using express as backend server, and provide simple service for frontend user. 
+This complete suite service uses express as backend server, postgres portable database and a (react) UI.
 
 ## Getting Started
 
@@ -10,8 +10,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-```
-Give examples
+```bash
+sudo apt install nodejs
 ```
 
 ### Installing
@@ -20,8 +20,8 @@ A step by step series of examples that tell you how to get a development env run
 
 Say what the step will be
 
-```
-Give the example
+```bash
+docker-compose up
 ```
 
 And repeat
@@ -40,8 +40,8 @@ Explain how to run the automated tests for this system
 
 Explain what these tests test and why
 
-```
-Give an example
+```bash
+npm test
 ```
 
 ### And coding style tests
@@ -58,9 +58,11 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [React.js](https://reactjs.org/) - Javascript User Interfaces
+* [Express.js](https://expressjs.com/) - The Web Framework
+* [postgres](https://www.postgresql.org/) - Relational Database
+* [npm](https://www.npmjs.com/) - Dependency Management
+* [Docker](https://www.npmjs.com/) - Standardized Deployment
 
 ## Contributing
 
@@ -72,7 +74,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Bruce** - *Initial work* - [GrassWolf-Green](https://github.com/GrassWolf-Green)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 

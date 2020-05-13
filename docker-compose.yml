@@ -1,0 +1,19 @@
+# Use postgres/postgres user/password credentials
+version: '3'
+
+services:
+  app:
+    image: app:1.0-alpine
+    restart: always
+    build: .
+    ports:
+      - "8080:8080"
+  pgdb:
+    image: postgres:9.5-alpine
+    restart: always
+    ports: 
+      - "5432:5432"
+    environment:
+        POSTGRES_PASSWORD: 'postgres'
+    volumes:
+      - ./pgdb:/var/lib/postgresql/data

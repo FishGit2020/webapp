@@ -15,7 +15,7 @@ services:
     restart: always
     ports: 
       - "5432:5432"
-    env_file:
-      - pgdb.env
+    environment: 
+      - POSTGRES_PASSWORD=postgres
     volumes:
       - ./pgdb:/var/lib/postgresql/data

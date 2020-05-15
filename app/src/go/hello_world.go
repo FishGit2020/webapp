@@ -3,12 +3,15 @@ package main
 import (
     "fmt"
     "net/http"
+    "log"
 )
 
 func main() {
     http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+        log.Print("Request received!")
         fmt.Fprintf(w, "Hello, you've requested: %s\n", r.URL.Path)
     })
 
-    http.ListenAndServe(":80", nil)
+    log.Print("Server running on port 8080!")
+    http.ListenAndServe(":8080", nil)
 }

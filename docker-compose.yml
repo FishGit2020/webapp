@@ -7,14 +7,14 @@ services:
     restart: always
     build: .
     ports:
-      - "8080:8080"
+      - "7070:8080"
     env_file:
       - pgdb.env
   goserver:
     image: goserver:1.0-alpine
     build: ./app/src/go
     ports: 
-      - "8081:8081"
+      - "7071:8081"
   pgdb:
     image: postgres:9.5-alpine
     restart: always

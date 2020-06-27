@@ -12,6 +12,7 @@ services:
       - pgdb.env
   goserver:
     image: goserver:1.0-alpine
+    restart: always
     build: ./app/src/go
     ports: 
       - "7071:8081"
@@ -22,5 +23,7 @@ services:
       - "5432:5432"
     environment: 
       - POSTGRES_PASSWORD=postgres
+      - POSTGRES_INITDB_ARGS="--data-checksums"
     volumes:
       - ./pgdb:/var/lib/postgresql/data
+      - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d

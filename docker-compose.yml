@@ -3,7 +3,7 @@ version: '3'
 
 services:
   app:
-    image: app:1.0-alpine
+    image: app:1.0-yp
     restart: always
     build: .
     ports:
@@ -11,13 +11,19 @@ services:
     env_file:
       - pgdb.env
   goserver:
-    image: goserver:1.0-alpine
+    image: goserver:1.0-yp
     restart: always
     build: ./app/src/go
     ports: 
-      - "7071:8081"
+      - "7071:8080"
+  javaserver:
+    image: javaserver:1.0-yp
+    restart: always
+    build: ./app/src/java
+    ports: 
+      - "7072:8080"
   pgdb:
-    image: postgres:9.5-alpine
+    image: postgres:9.5-yp
     restart: always
     ports: 
       - "5432:5432"
